@@ -1,5 +1,5 @@
-
-## Cách ProxyDHCP làm việc
+# ProxyDHCP
+## 1. Cách ProxyDHCP làm việc
 1. Khi PXE client khởi động, nó gửi bản tin broadcast DHCP Discover trên toàn mạng, bao gồm thông tin mà Client muốn từ DHCP-Server và một số thông tin xác định nó là thiết bị có khả năng PXE.
 2. DHCP-server gửi 1 DHCP-Offer cho Client gồm IP address, subnet mask, router (gateway) address, dns domain name...
 3. Client tự xác nhận nó là 1 PXE-Client và proxyDHCP-Server cũng trả về 1 DHCP-Offer nhưng không chứa thông tin về IP address mà cung cấp next-server-name vaf boot file name được sử dụng trong phiên TFTP.
